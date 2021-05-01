@@ -65,7 +65,8 @@ Y el siguiente mensaje debe aparecer:
 
 ![image](https://user-images.githubusercontent.com/10736003/116792755-ea18e280-aa7f-11eb-88c7-df1b5770e384.png)
 
-
+### Docker
+Repositorio de docker para descargar la [imagen](https://hub.docker.com/repository/docker/fanpug/app-server).
 
 ## Construido con
 * Nano - Editor de texto
