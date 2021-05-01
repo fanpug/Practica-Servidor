@@ -1,5 +1,6 @@
 FROM alpine
 
+#autor de la imagen
 MAINTAINER Humberto Navarro
 
 #corre el comando para actualizar alpine dentro del contenedor
