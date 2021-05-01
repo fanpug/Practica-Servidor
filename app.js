@@ -5,7 +5,7 @@ const fs = require('fs'); //libreria de file system
 //https => (requests, response)
 //
 //const data = fs.readFileSync('./www/file.txt'); //forma sincrona, paradigma imperativo
-
+console.log("Servidor ejecutandose...");
 
 http.createServer((request, response) => {
   //forma asincrona, paradigma funcional
