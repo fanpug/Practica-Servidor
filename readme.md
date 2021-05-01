@@ -54,6 +54,14 @@ Ahora en cualquier tipo de navegador instalado en la computadora (ejemplo chrome
 localhost:4444/
 ```
 Y la pagina debe dar el siguiente mensaje:
+![image](https://user-images.githubusercontent.com/10736003/116792724-a920ce00-aa7f-11eb-94d5-a7f43dfaaca3.png)
+
+Para probar el segundo archivo que creamos se escribe la siguiente direccion:
+```
+localhost:4444/file2.txt
+```
+Y el siguiente mensaje debe aparecer:
+![image](https://user-images.githubusercontent.com/10736003/116792755-ea18e280-aa7f-11eb-88c7-df1b5770e384.png)
 
 
 ## Construido con
