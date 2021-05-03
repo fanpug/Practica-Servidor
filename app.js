@@ -7,10 +7,12 @@ const fs = require('fs'); //libreria de file system
 //const data = fs.readFileSync('./www/file.txt'); //forma sincrona, paradigma imperativo
 console.log("Servidor ejecutandose...");
 
+
+//HTML, CSS, JS, MULTIMEDIA (IMG, AUDIO, VIDEO)
 http.createServer((request, response) => {
   //forma asincrona, paradigma funcional
   console.log(request.url);
-  const file = request.url == '/' ? "./www/file.txt" : `./www${request.url}`;
+  const file = request.url == '/' ? "./www/index.html" : `./www${request.url}`;
 
   fs.readFile(file, (error, data) => {
     if (error) {
@@ -20,9 +22,48 @@ http.createServer((request, response) => {
       response.write("Not Found madafacka");
       response.end();
     } else {
-      response.writeHead(200, {
-        "Content-Type": "text/plain"
-      });
+      //si tenemos la cadena "hola.como estas" i hacemos un split de esta
+      //manera "hola.como estas".split(','); va a devolver un arreglo con dos
+      //pedazos: ["hola", "como estas"]. Si agregamos el .pop(): "como estas"
+      const extension = file.split('.').pop();
+
+      switch (extension) {
+        case 'txt':
+          response.writeHead(200, {
+            "Content-Type": "text/plain"
+          });
+          break;
+
+        case 'html':
+          response.writeHead(200, {
+            "Content-Type": "text/html"
+          });
+          break;
+
+        case 'jpeg':
+          response.writeHead(200, {
+            "Content-Type": "image/jpeg"
+          });
+          break;
+
+        case 'css':
+          response.writeHead(200, {
+            "Content-Type": "text/css"
+          });
+          break;
+
+        case 'js':
+          response.writeHead(200, {
+            "Content-Type": "text/javascript"
+          });
+          break;
+
+        default:
+          response.writeHead(200, {
+            "Content-Type": "text/plain"
+          });
+      }
+
       response.write(data);
       response.end();
     }
