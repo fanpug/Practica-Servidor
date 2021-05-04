@@ -58,6 +58,12 @@ http.createServer((request, response) => {
           });
           break;
 
+          case 'ico':
+          response.writeHead(200, {
+            "Content-Type": "image/x-icon"
+          });
+          break;
+
         default:
           response.writeHead(200, {
             "Content-Type": "text/plain"
