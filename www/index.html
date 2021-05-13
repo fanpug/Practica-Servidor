@@ -3,16 +3,21 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/master.css">
 </head>
 
 <body>
-  <h1> Pasele a lo barrido homs </h1>
-  <h2> Pasele a lo barrido homs h2</h2>
-  <h3> Pasele a lo barrido homs h3</h3>
-  <h4> Pasele a lo barrido homs h4</h4>
-  <h5> Pasele a lo barrido homs h5</h5>
-  <h6> Pasele a lo barrido homs h6</h6>
+  <h1 id="titulo-principal" class="borderh"> Pasele a mi pagina web, homs! </h1>
+  <h2 class="borderh"> Pasele a lo barrido homs h2</h2>
+  <h3 class="borderh"> Pasele a lo barrido homs h3</h3>
+  <h4 class="borderh"> Pasele a lo barrido homs h4</h4>
+  <h5 class="borderh"> Pasele a lo barrido homs h5</h5>
+  <h6 class="borderh"> Pasele a lo barrido homs h6</h6>
 
+  <img src="/img/pug.png">
+  <div id="parrafo-importante">
+    <p>Hola soy parrafillo en un div</p>
+  </div>
   <marquee>
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ante arcu, pharetra non euismod a, facilisis ac tortor. Aenean vitae vehicula urna, at volutpat sapien. Aenean id lectus eget velit varius lacinia. Cras vehicula dolor lectus,
       vitae
@@ -36,7 +41,48 @@
     <li><b><i><u>Yo :)</u></i></b></li>
   </ol>
 
+  <table>
+    <thead>
+      <tr>
+        <th>Matricula</th>
+        <th>Apellidos</th>
+        <th>Nombre</th>
+        <th>Calificacion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>320669</td>
+        <td>Navarro</td>
+        <td>Humberto</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>320670</td>
+        <td>Lano</td>
+        <td>Fu</td>
+        <td>9</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <form method="post" action="/login">
+    <label LabelFor="email">Email</label>
+    <input type="text" name="email" id="email">
+
+    <label LabelFor="pass">Password</label>
+    <input type="password" name="password" id="pass">
+    <input type="submit">
+  </form>
+
+  <a id="show" href="#">Show password</a>
+  <a id="hide" href="#">Hide password</a>
+
+
+  <script type="text/javascript" src="/js/main.js">
+  </script>
+
+
 
 </body>
-
 </html>

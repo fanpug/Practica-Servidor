@@ -1,0 +1,27 @@
+p{
+  color: blue;
+}
+
+#titulo-principal{
+  color: red;
+  border-style: dotted;
+}
+
+.borderh{
+  border: 10px solid;
+  border-style: inset;
+}
+
+p{
+  color: green;
+}
+
+img[src]{
+  border: 10px solid;
+  border-style: double;
+}
+
+#parrafo-importante{
+  border-style: dashed;
+  padding-bottom: 200px;
+}
