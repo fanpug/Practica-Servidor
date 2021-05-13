@@ -1,14 +1,18 @@
+:root{
+  --color-texto: green;
+}
+
 p{
   color: blue;
 }
 
 #titulo-principal{
-  color: red;
+  color: var(--color-texto);
   border-style: dotted;
 }
 
 .borderh{
-  border: 10px solid;
+  border: 10px double;
   border-style: inset;
 }
 
@@ -24,4 +28,15 @@ img[src]{
 #parrafo-importante{
   border-style: dashed;
   padding-bottom: 200px;
+  padding-left: 80px;
+  padding-right: 400px;
+  padding-top: 150px;
+
+  margin-bottom: 150px;
+}
+
+#test-parrafo{
+  border-color: yellow;
+  border-top-width: 12px;
+  border-style: groove;
 }
